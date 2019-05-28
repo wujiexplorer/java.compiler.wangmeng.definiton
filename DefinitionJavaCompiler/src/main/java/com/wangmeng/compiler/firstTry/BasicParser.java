@@ -103,7 +103,7 @@ public class BasicParser {
     	/*
     	 * factor -> NUM_OR_ID | LP expression RP
     	 */
-    	
+    	//lookAhead先获取一个值，然后进行比较
     	if (lexer.match(Lexer.NUM_OR_ID)) {
     		lexer.advance();
     	}
